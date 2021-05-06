@@ -1,0 +1,50 @@
+.sidebar {
+  flex: 0 1 407px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  @media(max-width: 767px){
+    display: none;
+  }
+  &__block-title {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+.list-items {
+  &__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  &__item-img {
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+  }
+  &__item-text {
+    font-size: 14px;
+    line-height: 17px;
+    overflow: hidden;
+    max-width: 208px;
+  }
+  &__item-btn{
+    background-color: #FAFAFA;
+    font-size: 14px;
+    cursor: pointer;
+    width: 105px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: auto;
+    span{
+      color: $accent;
+    }
+  }
+}

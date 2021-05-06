@@ -1,21 +1,75 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
 
-<head>
+    <title>Remrating-SPB</title>
+    <meta name="description" content="remont" />
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-	<title><!--#echo var="title" --></title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+    <link rel="icon" href="images/favicon.png" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
 
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	
-	<link rel="stylesheet" href="css/main.min.css">
-
-</head>
-
-<body>
+  <body>
+    <header class="header">
+      <div class="container">
+				<div class="header__inner">
+					<div class="header-top">
+						<div class="header-top__logo">
+							<a href="#" class="header-top__logo-link">
+								<img class="header-top__logo-img" src="../images/dist/logo.svg" alt="RVT" />
+							</a>
+						</div>
+						<div class="header-top__search">
+							<form class="header-top__form search-form search-form--closed">
+								<button class="search-form__submite"></button>
+								<input
+									type="text"
+									class="search-form__input"
+									placeholder="Введите название компании..."
+								/>
+								<button class="search-form__close btn-close"></button>
+							</form>
+						</div>
+						<div class="header-top__controls">
+							<a href="#" class="btn btn-blue add-company">Добавить компанию + </a>
+							<button class="btn-mob-search"></button>
+							<button class="btn-mob-menu"></button>
+						</div>
+					</div>
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__item-link">Ремонт квартир</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__item-link">Дизайн интерьеров</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__item-link">Карта компаний</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__item-link">Последние отзывы</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__item-link">
+									<span class="menu__item-img">
+										<img src="../images/dist/qr.svg" alt="">
+									</span>
+									Калькулятор ремонта
+								</a>
+							</li>
+						</ul>
+					</nav>					
+				</div>
+      </div>
+    </header>
+  </body>
+</html>

@@ -1,3 +1,77 @@
 // GENERAL PROJECT STYLES
+body
+  background-color: #e5e5e5
 
+.container
+  max-width: 1280px
+  width: 100%
+  margin: 0 auto
+  @media screen and (min-width:768px) and (max-width:992px)
+    max-width: 720px
+  @media screen and (min-width:576px) and (max-width:768px)
+    max-width: 540px
+  @media screen and (max-width:575px)
+    max-width: 320px
 
+*
+  box-sizing: border-box;    
+
+input,button, select  
+  &:focus,
+  &:active
+    outline: 0
+    outline-color: transparent
+    outline-width: 0
+    outline-style: none
+    box-shadow: 0 0 0 0 rgba(0,123,255,0)
+   
+select
+  appearance: none
+  background-color: transparent
+  border: none
+  padding: 0 1em 0 0
+  margin: 0
+  width: 100%
+  font-family: inherit
+  font-size: inherit
+  cursor: inherit
+  line-height: inherit
+
+ul,li
+  margin: 0
+  padding: 0
+
+a:hover
+  text-decoration: none
+  color: inherit
+
+.btn
+  border-radius: 4px
+  display: block
+  padding: 0 7px
+  font-size: 16px
+  font-weight: 600
+  color: #fff
+
+.btn-blue
+  background-color: $accent
+  color:#fff
+  height: 38px
+  line-height: 38px
+  transition: all 0.3s
+  text-align: center
+
+.btn-blue:hover
+  color:#fff
+  background-color: darken($accent, 7%)
+  
+.btn-close  
+  width: 24px;
+  height: 24px;
+  background-image: url(../../../images/dist/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  &:active
+    background-color: #f3f4f8;
+  

@@ -1,0 +1,129 @@
+.main-content {
+  margin-right: 30px;
+  flex: 0 1 840px;
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.white-block {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  @media (max-width: 991px) {
+    padding: 15px;
+  }
+}
+
+.calc {
+  position: relative;
+  padding-bottom: 170px;
+  &__title {
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    column-gap: 10%;
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(1, 80%);
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(1, 100%);
+    }
+  }
+  &__label {
+    font-size: 12px;
+    line-height: 16px;
+    color: #989898;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  &__field {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    color: #666;
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+    padding: 13px 17px;
+    margin-top: 5px;
+    letter-spacing: 0.05em;
+  }
+  @media(max-width: 991px){
+    padding-bottom: 15px;
+  }
+}
+
+.block-description {
+  margin-bottom: 30px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 4px;
+    background-color: $accent;
+    z-index: 1;
+  }
+}
+
+.rezult-box {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  &__cost {
+    background-color: $accent;
+    color: #fff;
+    padding: 25px 50px;
+    min-width: 400px;
+    @media (max-width: 767px) {
+      min-width: 280px;
+      padding: 15px;
+
+    }
+  }
+  &__cost-description {
+    font-size: 18px;
+  }
+  &__cost-total {
+    font-size: 24px;
+    span{
+      margin-right: 5px;
+    }
+    @media (max-width: 767px) {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    }
+  }
+  &__description {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    @media (max-width: 991px) {
+      width: 100%;
+      padding-left: 0;
+      margin-bottom: 15px;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 991px) {
+    flex-direction: column-reverse;
+    position: relative;
+    text-align: center;
+  }
+}

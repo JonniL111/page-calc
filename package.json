@@ -1,9 +1,9 @@
 {
-	"name": "optimizedhtml",
-	"version": "5.0.0",
-	"description": "OptimizedHTML 5 - Lightweight Gulp Starter",
+	"name": "rvt",
+	"version": "1.0.0",
+	"description": "template",
 	"main": "index.js",
-	"author": "WebDesign Master",
+	"author": "Jon",
 	"license": "ISC",
 	"scripts": {
 		"start": "gulp",
