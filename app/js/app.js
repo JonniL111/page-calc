@@ -100,7 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
         teplPol = calcForm.querySelector('[name="teplPol"]'), //Теплые полы
         dor = calcForm.querySelector('[name="dor"]'), //Двери
         enterDor = calcForm.querySelector('[name="enterDor"]'); //Входная дверь
-      console.log(vanna.value);
 
       //блокируем поле площади санузла
       if (!Number(vanna.value)) {
@@ -134,13 +133,15 @@ document.addEventListener('DOMContentLoaded', () => {
         perim: parseInt(perim.value, 10),
         tipRemont: Number(tipRemont.value),
         potolok: Number(potolok.value),
-        vanna: parseInt(vanna.value, 10),
-        polshVan: Number(polshVan.value),
+        vanna: Number(vanna.value),
+        polshVan: parseInt(polshVan.value, 10),
         teplPol: Number(teplPol.value),
         dor: Number(dor.value),
         enterDor: !enterDor.checked,
       };
 
+      console.log(formData.vanna);
+      console.log(formData.polshVan);
       //выполняем вычисления
       if (isRedy) {
         rezult =
@@ -151,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
             formData.teplPol) *
             formData.ploshad +
           formData.dor * 8500 +
-          formData.vanna * polshVan.value;
+          formData.vanna * formData.polshVan;
 
         if (formData.enterDor) rezult = rezult * 1.05;
 
